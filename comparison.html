@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- bootstrap link start -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- bootstrap link end  -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+  <style>
+    .prodImg {
+      height: 300px;
+      width: auto;
+    }
+  </style>
+</head>
+
+<body>
+<h6 class=" py-2 heading text-center fw-bold text-light sticky-top ">
+    <marquee>🚀 Flat 60% Discount Start from aprail !
+      🧾 + 10% Tax Will Be Added at Checkout</marquee>
+  </h6>
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand column-gap-md-2" href="index.html">
+        <img src="image/elegant-kitchen-fork-logo-vector-13418415 - Copy.avif" height="50" width="auto" alt="">
+      </a>
+      <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbaRS.upportedContent" aria-controls="navbaRS.upportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbaRS.upportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item ms-3">
+            <a class="nav-link active  text-black " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-black " href="about.html">About</a>
+          </li>
+          <li class="nav-item  ms-3  dropdown">
+            <a class="nav-link dropdown-toggle text-black " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item  " href="aluminium.html">Aluminium</a>
+              </li>
+              <li><a class="dropdown-item " href="stain less steel.html">Stain less steel</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider ">
+              </li>
+              <li><a class="dropdown-item " href="non-stick.html">Non-stick</a>
+              </li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item ms-3"> -->
+          <!-- <a class="nav-link text-black " -->
+          <!-- href="">Specification</a> -->
+          <!-- </li> -->
+          <li class="nav-item ms-2">
+            <a class="nav-link text-black " href="offer.html">Offers</a>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link text-black " href="contact.html">Contact</a>
+          </li>
+
+          <li class="nav-item ms-3">
+            <a class="nav-link text-black" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-black" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+
+
+
+
+        <img src="image/grocery-store.png" alt="" height="20" width="auto">
+        &nbsp;
+        &nbsp;
+        <img src="image/user.png" alt="" height="20" width="auto">
+        &nbsp;
+        &nbsp;
+        <img src="image/facebook.png" alt="" height="20" width="auto">
+        &nbsp;
+        &nbsp;
+        &nbsp;
+      </div>
+    </div>
+  </nav>
+  <!-- nav bar end  -->
+<!-- banner section start  -->
+<div class="container-fluid">
+      <div class="row p-0">
+        <div class="col-md-12 m-0 p-0">
+          <img src="image/kitchen-banner-bw.png"
+            alt=""
+            class="img img-fluid">
+        </div>
+      </div>
+    </div>   
+<h1 class="text-center fw-bold  animate__animated animate__bounce mt-3">All Comparison Product</h1>
+
+  <div class="container">
+    <div class="row justify-content-center p-5">
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="Select" list="products1" id="prod1"
+          onchange="getProducts1(this.value)" />
+
+        <datalist id="products1">
+
+        </datalist>
+
+        <table class="table">
+          <tbody id="table1">
+            <tr>
+              <td>
+                <img src="image/ChatGPT Image Mar 7, 2026, 05_13_26 PM.png" alt="Dummy Image" class="prodImg" />
+              </td>
+            </tr>
+            <tr>
+              <td>Product Name</td>
+            </tr>
+            <tr>
+              <td>Category</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+            </tr>
+            <tr>
+              <td>discount Price</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="Select" list="products2" id="prod2"
+          onchange="getProducts2(this.value)" />
+        <datalist id="products2"> </datalist>
+        <table class="table">
+          <tbody id="table2">
+            <tr>
+              <td>
+                <img src="./image/ChatGPT Image Mar 7, 2026, 05_13_26 PM.png" alt="Dummy Image" class="prodImg" />
+              </td>
+            </tr>
+            <tr>
+              <td>Product Name</td>
+            </tr>
+            <tr>
+              <td>Category</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+            </tr>
+            <tr>
+              <td>discount Price</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+
+  <script src="js/data.js"></script>
+
+
+
+
+  <script>
+    // console.log(products)
+    const productsList1 = document.getElementById("products1"); //list 1
+    const productsList2 = document.getElementById("products2"); //list 2
+    const productsList3 = document.getElementById("products3"); //list 3
+    const productsList4 = document.getElementById("products3"); //list 4
+    const productsList5 = document.getElementById("products5"); //list 5
+    const productsList6 = document.getElementById("products6"); //list 6
+    const productsList7 = document.getElementById("products7"); //list 7
+    const productsList8 = document.getElementById("products8"); //list 8
+    const productsList9 = document.getElementById("products9"); //list 9
+    const productsList10 = document.getElementById("products10"); //list 10
+     const productsList11 = document.getElementById("products11"); //list 11
+      const productsList12 = document.getElementById("products12"); //list 12
+      const productsList13 = document.getElementById("products13"); //list 13
+      const productsList14 = document.getElementById("products14"); //list 14
+      const productsList15 = document.getElementById("products15"); //list 15
+      const productsList16 = document.getElementById("products16"); //list 16
+      const productsList17 = document.getElementById("products17"); //list 17
+      const productsList18 = document.getElementById("products18"); //list 18
+      const productsList19 = document.getElementById("products19"); //list 19
+      const productsList20 = document.getElementById("products20"); //list 20
+      const productsList21 = document.getElementById("products21"); //list 21
+      const productsList22 = document.getElementById("products22"); //list 22
+      const productsList23 = document.getElementById("products23"); //list 23
+      const productsList24 = document.getElementById("products24"); //list 24 
+      const productsList25 = document.getElementById("products25"); //list 25 
+      const productsList26 = document.getElementById("products26"); //list 26 
+    // () => {} arrow function
+    products.forEach((prod) => {
+      const option1 = document.createElement("option");
+      option1.value = prod.name;
+      productsList1.appendChild(option1);
+
+      const option2 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option2);
+
+      const option3 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option3);
+
+      const option4 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option4);
+
+     const option5 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option5);
+     
+      const option6 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option6); 
+
+      const option7 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option7);
+      
+      const option8 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option8); 
+
+        const option9 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option9); 
+
+     const option10 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option10); 
+
+     const option11 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option11);
+      
+     const option12 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option12); 
+ 
+    const option13 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option13); 
+   
+    const option14 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option14);
+
+     const option15 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option15);
+
+     const option16 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option16);  
+    
+      const option17 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option17); 
+      
+       const option18 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option18); 
+
+       const option19 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option19); 
+
+     const option20 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option20);  
+
+     const option21 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option21);   
+      
+     const option22 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option22);
+      
+      const option23 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option23); 
+
+      const option24 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option24);  
+      
+      const option25 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option25); 
+
+    const option26 = document.createElement("option");
+      option2.value = prod.name;
+      productsList2.appendChild(option25); 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+    function getProducts1(product) {
+
+      prod2 = document.getElementById("prod2").value;
+
+      if (product != prod2) {
+        const selectProduct = products.find(
+          (pd) => pd.name == product
+        );
+
+        if (selectProduct) {
+          const table = document.getElementById("table1");
+          table.innerHTML = "";
+
+          const rows = [
+            `<tr><td><img src="${selectProduct.image}" alt="${selectProduct.name}" class='prodImg'></td></tr>`,
+            `<tr><td>${selectProduct.name}</td></tr>`,
+            `<tr><td>${selectProduct.category}</td></tr>`,
+            `<tr><td>${selectProduct.price}</td></tr>`,
+            `<tr><td>${selectProduct.discount}</td></tr>`,
+          ];
+
+
+          rows.forEach((row) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = row;
+            table.appendChild(tr);
+          });
+        }
+      }
+      else {
+        document.getElementById("prod1").value = "";
+        alert("Select a Different Product");
+      }
+    }
+
+    function getProducts2(product) {
+      prod1 = document.getElementById("prod1").value;
+      if (product != prod1) {
+        const selectProduct = products.find(
+          (pd) => pd.name == product
+        );
+        if (selectProduct) {
+          const table = document.getElementById("table2");
+          table.innerHTML = "";
+          const rows = [
+            `<tr><td><img src="${selectProduct.image}" alt="${selectProduct.name}" class='prodImg'></td></tr>`,
+            `<tr><td>${selectProduct.name}</td></tr>`,
+            `<tr><td>${selectProduct.category}</td></tr>`,
+            `<tr><td>${selectProduct.price}</td></tr>`,
+            `<tr><td>${selectProduct.discount}</td></tr>`,
+          ];
+          rows.forEach((row) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = row;
+            table.appendChild(tr);
+          });
+        }
+      } else {
+        document.getElementById("prod2").value = "";
+        alert("Select a Different Product");
+      }
+    }
+
+    function getProducts2(product) {
+      prod1 = document.getElementById("prod1").value;
+      if (product != prod1) {
+        const selectProduct = products.find(
+          (pd) => pd.name == product
+        );
+        if (selectProduct) {
+          const table = document.getElementById("table2");
+          table.innerHTML = "";
+          const rows = [
+            `<tr><td><img src="${selectProduct.image}" alt="${selectProduct.name}" class='prodImg'></td></tr>`,
+            `<tr><td>${selectProduct.name}</td></tr>`,
+            `<tr><td>${selectProduct.category}</td></tr>`,
+            `<tr><td>${selectProduct.price}</td></tr>`,
+            `<tr><td>${selectProduct.discount}</td></tr>`,
+          ];
+          rows.forEach((row) => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = row;
+            table.appendChild(tr);
+          });
+        }
+      } else {
+        document.getElementById("prod2").value = "";
+        alert("Select a Different Product");
+      }
+    }
+
+ 
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+<div class="container my-5 text-center">
+
+    <h6 class="text-danger">SUBSCRIBE NEWSLETTER</h6>
+    <h2>Join Our Newsletter</h2>
+    <form class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Your email address " required>
+      </div>
+
+      <div class="col-md-2 mt-2 mt-md-0">
+        <button type="submit" class="btn btn-danger w-100">
+          Subscribe
+        </button>
+      </div>
+    </form>
+
+  </div>
+
+
+
+
+  <div class="container my-5">
+    <div class="row text-center py-5">
+
+      <div class="col-md-3">
+        <h5>🚚 Free Shipping</h5>
+        <p>Order RS..1999/- or above</p>
+      </div>
+
+      <div class="col-md-3">
+        <h5>🔄 Returns Order</h5>
+        <p>Within 15 days</p>
+      </div>
+
+      <div class="col-md-3">
+        <h5>📞 We Support 24/7</h5>
+        <p>Amazing Services</p>
+      </div>
+
+      <div class="col-md-3">
+        <h5>📦 Allow to Open</h5>
+        <p>Check Before Payment</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="mt-4">
+    <hr>
+    <div class="container-fluid">
+      <div class="row px-5">
+
+
+        <div class="col mt-3">
+          <h4>Products</h4>
+          <p>Cookware</p>
+          <p>cutlery</p>
+          <p>Storage</p>
+          <p>Miscellaneous Utensils</p>
+        </div>
+
+        <div class="col mt-3">
+          <h4>Shop</h4>
+          <p>Offers</p>
+          <p>world wide use</p>
+          <p>pure quality </p>
+          <p>Store Locator</p>
+        </div>
+
+        <div class="col mt-3">
+          <h4>Support</h4>
+          <p>Contact Us</p>
+          <p>Service Center</p>
+          <p>Warranty</p>
+          <p>FAQ</p>
+        </div>
+
+        <div class="col mt-3">
+          <h4>Company</h4>
+          <p>About kitchen Utensils</p>
+          <p>Careers</p>
+          <p><img src="image/instagram.png " alt="" height="20" width="auto"></p>
+          <p><img src="image/facebook.png" alt="" height="20" width="auto"></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="text-center">© 2026 kitchen. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>

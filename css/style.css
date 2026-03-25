@@ -1,0 +1,157 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+
+.nav-link:hover {
+    color: red !important;
+}
+
+.input-group-fluid {
+    width: 100px;
+    height: 48px;
+    margin: auto;
+    padding: 0px 20px;
+    background: #ffff;
+    display: block;
+    border-radius: 40px;
+}
+
+.heading {
+    background-color: black;
+    margin: 0;
+}
+
+* nav {
+    background-color: #FFFFFF;
+
+}
+
+.categories {
+    padding: 50px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.categories h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #2B2B2B;
+}
+
+
+.category-row {
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    
+    gap: 30px;
+    
+}
+
+
+.category-card {
+    width: 150px;
+    
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.category-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: #1F3A5F;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.card-title:hover {
+    color: red !important;
+}
+.features ul{
+    padding: 20px;
+
+}
+
+.features li{
+    margin-left: 20px;
+} 
+
+h3{
+    margin-left: 20px;}
+ 
+    .specs{
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+    }
+    .specs table{
+        width: 100%;
+        border-collapse:collapse ;
+    }
+    .specs td{
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+
+    }
+   /* for feedbaack  */
+   .rating {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    display: inline-flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating input:checked ~ label {
+    color:gold;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color:gold;
+}
+
+
+
